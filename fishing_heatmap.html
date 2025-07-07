@@ -13,11 +13,11 @@
     <body>
       <div id="map"></div>
       <script>
-        const map = L.map('map').setView([56.4882658, 15.5109716], 16);
+        const map = L.map('map').setView([56.488007249999995, 15.5107895], 16);
         L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
           attribution: 'Google',
         }).addTo(map);
-        const heat = L.heatLayer([[56.489223,15.511691],[56.488116,15.511775],[56.485652,15.512425],[56.489038,15.507267],[56.4893,15.5117]], {radius: 15}).addTo(map);
+        const heat = L.heatLayer([[56.489223,15.511691],[56.488116,15.511775],[56.485652,15.512425],[56.489038,15.507267]], {radius: 15}).addTo(map);
       </script>
     </body>
     </html>
