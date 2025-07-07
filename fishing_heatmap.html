@@ -17,8 +17,10 @@
         L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
           attribution: 'Google',
         }).addTo(map);
-        const heat = L.heatLayer([[56.489223,15.511691,1],[56.488116,15.511775,1],[56.485652,15.512425,1],[56.489038,15.507267,1]], {
-          radius: 10
+        const heat = L.heatLayer([[56.489223,15.511691],[56.488116,15.511775],[56.485652,15.512425],[56.489038,15.507267]], {
+          radius: 15,
+          maxZoom: 18,
+          max: 1.0 // Prevent points from stacking too brightly
         }).addTo(map);
       </script>
     </body>
