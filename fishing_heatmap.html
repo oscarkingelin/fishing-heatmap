@@ -13,11 +13,11 @@
     <body>
       <div id="map"></div>
       <script>
-        const map = L.map('map').setView([56.48797, 15.510932500000001], 16);
+        const map = L.map('map').setView([56.48720579999999, 15.510969800000002], 16);
         L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
           attribution: 'Google',
         }).addTo(map);
-        const heat = L.heatLayer([[56.489223,15.511691,1],[56.488116,15.511775,1],[56.485652,15.512425,1],[56.489038,15.507267,1],[56.4895,15.512,1],[56.486291,15.510437,1]], {
+        const heat = L.heatLayer([[56.489223,15.511691,1],[56.488116,15.511775,1],[56.485652,15.512425,1],[56.489038,15.507267,1],[56.484,15.511691,1]], {
           radius: 15,
           maxZoom: 18,
           max: 1.0 // Prevent points from stacking too brightly
